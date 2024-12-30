@@ -1,0 +1,4 @@
+aadhviksunpackprint
+cr9lne5U6FAkzRYF
+
+mongodb+srv://aadhviksunpackprint:cr9lne5U6FAkzRYF@cluster0.kuqgi.mongodb.net/
