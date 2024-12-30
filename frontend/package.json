@@ -16,6 +16,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://final-app-45ng.onrender.com",
   "eslintConfig": {
     "extends": [
       "react-app",

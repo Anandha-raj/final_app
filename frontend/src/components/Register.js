@@ -1,5 +1,6 @@
 import { useState } from "react";
 import api from "../apicall/api";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
     // create state variables which hold name, email and password
@@ -7,6 +8,7 @@ function Register() {
     const[email, setEmail] = useState('');
     const[password, setPassword] = useState('');
     const[message, setMessage] = useState('');
+    const navigate = useNavigate();
 
     // handle form submit
     const handleSubmit = async(e) => {
@@ -23,6 +25,10 @@ function Register() {
         }catch(error){
             console.log(error)
         }
+    }
+
+    const redirectLogin = () => {
+        navigate('/login');
     }
 
     return (
@@ -47,6 +53,7 @@ function Register() {
                 </div>
 
                 <button type = "submit">Register</button>
+                <button onClick={redirectLogin} type = "button">Login</button>
             </form>
         </div>
     )
